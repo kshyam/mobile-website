@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Website with Bootstrap 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+        }
+        .splash-screen {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007bff;
+        }
+        .container {
+            display: none;
+            margin-top: 50px;
+        }
+    </style>
+    <script src="register-service-worker.js"></script>
+
+</head>
+<body>
+    <div class="splash-screen" id="splashScreen">
+        <h1>Welcome to My Mobile Website</h1>
+    </div>
+    <div class="container" id="mainContent">
+        <h1 class="mt-5">Welcome to My Mobile Website</h1>
+        <p class="lead">Click the button below to add this site to your home screen for quick access.</p>
+        <button id="installBtn" class="btn btn-primary">Add to Home Screen</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
